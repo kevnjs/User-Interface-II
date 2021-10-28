@@ -1,1 +1,103 @@
-/* Add CSS styling here */
+/*CSS reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+    border:1px solid grey;
+}
+
+/*General Styles ==============================*/
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    background-color: #fbfffb;
+}
+/*Helper Class ================================*/
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+/*Top Navigation Bar ==========================*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+}
+.name{
+    font-size: 3rem;
+}
+.links{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.links a{
+    padding: 2% 5%;
+}
+/*About Section ================================*/
+.about{
+    height:50vh;
+    width: 70%;
+    margin: 0 auto;
+    background-image: url("/Graphics/samantha-gades-BlIhVfXbi9s-unsplash.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+.text button {
+    width: 60%;
+    padding: 4% 1%;
+}
+/*Projects Section =============================*/
+#projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#projects a{
+    width: 30%;
+    height: 30vh;
+    margin: 1%
+}
