@@ -98,6 +98,15 @@ body{
 }
 #projects a{
     width: 30%;
-    height: 30vh;
+    height: 25vh;
     margin: 1%
+}
+#contact {
+    margin-top: 3%;
+    padding: 3% 0;
+    text-align: center;
+}
+#contact button {
+    width: 16%;
+    padding: 1% 1%;
 }
