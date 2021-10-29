@@ -1,1 +1,135 @@
-/* Add CSS styling here */
+/*CSS reset*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+/*General Styles ==============================*/
+body{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #4f4f4f;
+    background-color:slategrey;
+}
+
+a , h2, button,p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-decoration: none;
+}
+/*Helper Class ================================*/
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+/*Top Navigation Bar ==========================*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 0;
+    background-color: whitesmoke;
+}
+.name{
+    font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    margin-left: 2%;
+}
+.links{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.links a{
+    padding: 2% 5%;
+}
+/*About Section ================================*/
+.about{
+    height:50vh;
+    width: 70%;
+    margin: 2% auto;
+    background-image: url("/Graphics/gracia-dharma-qTlbO6mkQH0-unsplash.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3rem;
+}
+.text h2 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.text button {
+    width: 60%;
+    padding: 4% 1%;
+}
+/*Projects Section =============================*/
+#projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#projects div {
+    width: 30%;
+    height: 25vh;
+    margin:1%;
+    text-align: center;
+}
+#projects img {
+    width: 100%;
+    max-height: 100%;
+    height:80%;
+    max-height:80%;
+    object-fit: cover;
+}
+/*Footer Section ===============================*/
+
+#contact {
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+    text-align: center;
+    background-color: whitesmoke;
+}
+#contact button {
+    padding: 1% 3%;
+}
