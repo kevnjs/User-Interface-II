@@ -35,7 +35,6 @@ footer, header, hgroup, menu, nav, section {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border:1px solid grey;
 }
 
 /*General Styles ==============================*/
@@ -43,7 +42,12 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     color: #4f4f4f;
-    background-color: #fbfffb;
+    background-color:slategrey;
+}
+
+a , h2, button,p {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    text-decoration: none;
 }
 /*Helper Class ================================*/
 .bg-img {
@@ -57,9 +61,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 2% 0;
+    background-color: whitesmoke;
 }
 .name{
     font-size: 3rem;
+    font-family: 'Lobster', cursive;
+    margin-left: 2%;
 }
 .links{
     width:50%;
@@ -73,8 +80,8 @@ body{
 .about{
     height:50vh;
     width: 70%;
-    margin: 0 auto;
-    background-image: url("/Graphics/samantha-gades-BlIhVfXbi9s-unsplash.jpg");
+    margin: 2% auto;
+    background-image: url("/Graphics/gracia-dharma-qTlbO6mkQH0-unsplash.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,6 +91,11 @@ body{
     flex-direction: column;
     align-items: center;
     font-size: 3rem;
+}
+.text h2 {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    font-weight: bold;
+    color: #fff;
 }
 .text button {
     width: 60%;
@@ -96,17 +108,28 @@ body{
     justify-content: center;
     flex-wrap: wrap;
 }
-#projects a{
+#projects div {
     width: 30%;
     height: 25vh;
-    margin: 1%
-}
-#contact {
-    margin-top: 3%;
-    padding: 3% 0;
+    margin:1%;
     text-align: center;
 }
+#projects img {
+    width: 100%;
+    max-height: 100%;
+    height:80%;
+    max-height:80%;
+    object-fit: cover;
+}
+/*Footer Section ===============================*/
+
+#contact {
+    width: 100%;
+    margin-top: 2%;
+    padding: 2%;
+    text-align: center;
+    background-color: whitesmoke;
+}
 #contact button {
-    width: 16%;
-    padding: 1% 1%;
+    padding: 1% 3%;
 }
