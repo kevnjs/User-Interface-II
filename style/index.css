@@ -70,14 +70,13 @@ header {
     margin-left:2%;
 }
 .links{
+    margin-right:3%;
     display: flex;
     justify-content: flex-end;
 }
 .links a {
-    padding: 5%;
-    border: 1px solid gray;
-    border-radius: 20px;
-    margin: 2%;
+    padding: 2%;
+    text-align: center;
     text-decoration:none;
     color: #4f4f4f;
 }
@@ -140,4 +139,51 @@ footer {
 }
 footer button {
     padding: 0.5% 2%;
+}
+
+/*Tablet =======================================*/
+@media (max-width: 800px) {
+    .top {
+        width:90%;
+    }
+    .middle {
+
+    }
+}
+
+/*Mobile =======================================*/
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .name {
+        font-size: 2rem;
+        margin-right: 4%;
+    }
+    .links {
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        font-size: 1rem;
+    }
+    .top {
+        height: 50vh;
+    }
+
+    .box {
+        margin: 2%;
+        width: 40%;
+    }
+    .box img {
+        height: 20vh;
+    }
+    footer {
+        padding: 5%;
+    }
+
 }
