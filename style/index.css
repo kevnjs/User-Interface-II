@@ -42,7 +42,6 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     color: #4f4f4f;
-    background-color:slategrey;
 }
 
 a , h2, button,p {
@@ -61,36 +60,49 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 0;
-    background-color: whitesmoke;
+    padding: 0.5% 0;
+    background-color: #1d1d1f;
 }
 .name {
     font-size: 3rem;
     font-family:'Lobster', cursive;
     margin-left:2%;
+    color: #fff;
 }
-.links{
-    margin-right:3%;
+header nav {
+    width: 50%;
     display: flex;
     justify-content: flex-end;
 }
-.links a {
-    padding: 2%;
-    text-align: center;
-    text-decoration:none;
-    color: #4f4f4f;
+.links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
 }
+.links a {
+    text-align: center;
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    
+}
+
 /*Top =======================================*/
 .container {
     width: 80%;
     margin: 2% auto;
     text-align: center;
+    background-color: #fff;
 
 
 
 }
 .top {
-    background-image: url("/Graphics/scott-gummerson-_5Q1-ae44aw-unsplash.jpg");
+    background-image: url("/Graphics/blacktitleimg.jpg");
     background-position: center;
     background-size: cover;
     height: 70vh;
@@ -135,7 +147,7 @@ header {
 footer {
     padding: 2%;
     text-align: center;
-    background-color:whitesmoke;
+    background-color: #1d1d1f;
 }
 footer button {
     padding: 0.5% 2%;
@@ -159,17 +171,19 @@ footer button {
     header {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2%;
     }
     .name {
         font-size: 2rem;
         margin-right: 4%;
     }
     .links {
-        margin: 0 auto;
+        margin: 2% auto;
         flex-direction: column;
         justify-content: center;
         align-items:center;
         font-size: 1rem;
+        width: 50%;
     }
     .top {
         height: 50vh;
